@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /*for whole body*/
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            background-image: linear-gradient(to left, #990000 0%, #000000 60%);
+            color: #f2f2f2;
+            font-family: georgia;
+        }
+
+        /*for header*/
+        nav {
+            background-image: linear-gradient(to left, #990000 0%, #000000 60%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        nav h2 {
+            float: left;
+            margin-left: 30px;
+        }
+
+        h2 a {
+            text-decoration: none;
+            color: lightgray;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li a {
+            float: right;
+            text-decoration: none;
+            color: lightgray;
+            display: inline;
+            padding: 20px 20px;
+        }
+
+        nav li a:hover {
+            background-color: black;
+            text-decoration: underline;
+        }
+
+        nav .active {
+            background-color: black;
+        }
+
+        /*for main content*/
+        main {
+            flex: 1;
+            /* This makes the main content take up available space */
+        }
+
+        .intro {
+            float: left;
+            margin: 150px 100px;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .career {
+            background-color: lightgray;
+            color: #000000;
+            border-radius: 5px;
+            padding-left: 5px;
+            text-align: center;
+            width: 450px;
+        }
+
+        p {
+            font-family: verdana;
+        }
+
+        p a {
+            text-decoration: none;
+            color: lightgray;
+        }
+
+        p a:hover {
+            color: #990000;
+            text-decoration: underline;
+        }
+
+        .picture {
+            float: right;
+            margin: 180px 100px;
+        }
+
+        .picture .pic1 {
+            border-radius: 50%;
+            border: 2px solid #990000;
+            margin-left: 33px;
+            transition: transform 1s ease;
+        }
+
+        .picture .pic1:hover {
+            transform: scale(1.2);
+        }
+
+        .picture .loc {
+            margin-right: -5px;
+        }
+
+        .picture .material-icons {
+            color: lightgray;
+        }
+
+        /*end of main content*/
+
+        /* Footer Styles */
+        .footer {
+            background-image: linear-gradient(to left, #990000 0%, #000000 60%);
+            color: lightgray;
+            padding: 20px 40px;
+            font-family: Georgia, serif;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            /* Position groups side by side */
+            align-items: center;
+            /* Vertically align the groups */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Left Section: Logo and Navigation */
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            /* Space between logo and navigation */
+        }
+
+        .footer-logo h1 {
+            color: lightgray;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .footer-nav {
+            border-left: 1px solid lightgray;
+            /* Vertical line between logo and navigation */
+            padding-left: 20px;
+        }
+
+        .footer-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-nav ul li a {
+            color: #d4d4d4;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .footer-nav ul li a:hover {
+            color: #990000;
+            background-color: black;
+        }
+
+        /* Right Section: Info */
+        .footer-info {
+            text-align: right;
+            /* Right-align the text */
+        }
+
+        .footer-info p {
+            margin: 5px 0;
+        }
+
+        .footer-info a {
+            color: lightgray;
+            text-decoration: none;
+        }
+
+        .footer-info a:hover {
+            color: #990000;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                /* Stack groups vertically on smaller screens */
+                text-align: center;
+            }
+
+            .footer-left {
+                border: none;
+                /* Remove vertical line */
+                padding-left: 0;
+                flex-direction: column;
+                /* Stack the logo and navigation vertically */
+                gap: 10px;
+            }
+
+            .footer-info {
+                text-align: center;
+                /* Center-align the info text */
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main content -->
+    <nav>
+		<h2><a href="../IPT_CATAPANG/index.html">JZBC</a></h2>
+		<ul>
+			<li><a href="../IPT_CATAPANG/Contact.html">Contact</a></li>
+			<li><a href="../IPT_CATAPANG/AboutMe.html">About Me</a></li>
+			<li><a class="active" href="../IPT_CATAPANG/index.html">Home</a></li>
+		</ul>
+	</nav>
+
+    <main>
+        <div class="intro">
+            <h4>Hi, My name is</h4>
+            <h1>Jumel Zechariah B. Catapang</h1>
+            <div class="career">
+                <h3>Software Engineer / Game Developer</h3>
+            </div>
+            <p>I am a beginner in programming and web development, <br>
+                actively learning and building my skills. Driven by a passion <br>
+                for technology, I am eager to grow and take on new challenges. <br>
+                I'm also involved in managing a small business, where I've <br>
+                gained experience in teamwork and responsibility.
+
+                <br><br>
+                Learn more <a href="AboutMe.html">About Me</a>
+            </p>
+        </div>
+
+        <div class="picture">
+            <img src="../IPT1_CATAPANG/docs/IMG/Catapang.jpeg" class="pic1" width="220" height="220">
+            <h2>
+                <i class="material-icons">place</i>
+                Malabon, Philippines
+            </h2>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Left Section: Logo and Navigation -->
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <h1>JZBC</h1>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="AboutMe.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Center Section: Inspirational Quote -->
+            <div class="footer-quote">
+                <p>"The most effective way to do it, is to do it."</p>
+            </div>
+
+            <!-- Right Section: Info -->
+            <div class="footer-info">
+                <p>© 2024 - Jumel Zechariah B. Catapang</p>
+                <p><a href="mailto:catapang.jumelzechariah@gmail.com"
+                        target="_blank">catapang.jumelzechariah@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
